@@ -1,0 +1,12 @@
+#backtotop {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 10px;
+    bottom: 50px;
+    background-color: yellowgreen;
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+}

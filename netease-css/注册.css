@@ -1,0 +1,43 @@
+*{
+    padding: 0;margin: 0;
+}
+body{
+    background-color: #efefef;
+}
+.header{
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+}
+.sprite{
+    width: 175px;
+    height: 35px;
+    border: 1px solid red;
+    background-image: url(../netease-images/gjl-sprite.png);
+    background-position: -49px -27px;
+    position: absolute;
+    top: 40px;
+}
+#go-login{
+    width: 150px;
+    height: 40px;
+    float: right;
+    position: relative;
+    top: 40px;
+}
+.middle{
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.middle .accountlogin{
+    width: 500px;
+    height: 115px;
+    border:1px solid black;
+    margin: 0 auto;
+}

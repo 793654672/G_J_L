@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../netease-css/shop-cart.css">
+    <link rel="stylesheet" href="../netease-css/header.css">
+    <link rel="stylesheet" href="../netease-css/reset.css">
+    <link rel="shortcut icon" href="../netease-images/gjl-favicon.ico?r=gold" type="image/x-icon" />
+</head>
+
+<body>
+        <div class="overheader">
+            <!--吸顶效果-->
+            <div id="main-nav" class="main-nav">
+                <ul class="cat" id="cat">
+                    <li class="photo"><a href="#"></a></li>
+                    <li class="cat-enter"><a href="shop-cart.html">购物车</a></li>
+                    <li class="cat-enter"><a href="login.html">登录</a></li>
+                    <li class="cat-enter"><a href="register.html">注册</a></li>
+                </ul>
+            </div>
+            <!--头部-->
+            <header>
+                <div class="header-container">
+                    <div class="header-top">
+                        <a class="top-life" href="#">好的生活，没那么贵</a>
+                        <div class="survey-box">
+                            <span><img src="../netease-images/rxm-laba.gif"/></span>
+                            <a href="#">【有奖调研】填问卷有机会赢30元话费</a>
+                        </div>
+                        <ul>
+                            <li><a href="javascript:" id="p_login">请，登录</a></li>
+                            <li><a href="index.html" id="esc">退出</a></li>
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="#" class="top-special">严选会员</a></li>
+                            <li><a href="#" class="top-special">企业采购</a></li>
+                            <li><a href="#" class="top-special">客服服务</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-middle">
+                    <div class="middle-search">
+                        <input id="search" type="text" placeholder="请输入要搜索的内容" />
+                        <a class="sea-sym" href="javascript:" id="bigglass"></a>
+                        <a class="cart-sym" href="shop-cart.html"></a>
+                    </div>
+                    <img src="../netease-images/rxm-6.gif" class="middle-gif" />
+                    <div class="nav-nav">
+                        <ul class="middle-nav" id="middle-nav">
+                            <li class="nav-first"><a href="">首页</a></li>
+                            <li class="zhiqu"><a href="#">甄选家</a></li>
+                            <li class="zhiqu"><a href="#">专题</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            </div>
+        <line id="line"></line>
+
+
+        <!--购物车-->
+        <!--<div id="middlecart">-->
+            <main>
+                <table>
+                    <tr class="shopnav">
+                        <td class="names">商品ID</td>
+                        <td class="names">图片</td>
+                        <td class="names">名称</td>
+                        <td class="names">数量</td>
+                        <td class="names">单价</td>
+                        <td class="names">总价</td>
+                        <td class="names">操作</td>
+                    </tr>
+                </table>
+                <div><h5>小计:</h5>&nbsp;<span id="sum">0</span> <input type="button" id="clear-cart" value="清空购物车"> <a href="checkout.html">下&nbsp;单</a></div>
+            </main>
+                <!--<div id="cart-content">-->
+                    <!--<div class="image"></div>-->
+                    <!--<p class="text">购物车</p>-->
+                    <!--<button class="go">继续逛</button>-->
+                <!--</div>-->
+        <!--</div>-->
+
+        <!--猜你喜欢轮播图-->
+        <div class="slideshow">
+            <div class="youlike"><h3>猜你喜欢</h3></div>
+            <div class="banner">
+                <div class="carousel">
+                    <div class="imagesList" id="imagesList">
+                        <ul>
+                            <li class="current">
+                                 <div class="pic"><img src="../netease-images/gjl-b1.png" alt="">
+                                        <div class="text" >黑凤梨 104升纯PC拉链斜纹拉杆箱</div>
+                                        <div class="price">¥299.00</div>
+                                 </div>
+                                 <div class="pic"><img src="../netease-images/gjl-b2.png" alt="">
+                                     <div class="text">YEATION百合沙发单人位</div>
+                                     <div class="price">¥2199.00</div>
+                                 </div>
+                                 <div class="pic"><img src="../netease-images/gjl-b3.png" alt="">
+                                     <div class="text">透明化妆包</div>
+                                     <div class="price">¥14.90</div>
+                                 </div>
+                                 <div class="pic"><img src="../netease-images/gjl-b4.png" alt="">
+                                     <div class="text">起泡海绵皂盒 便携款</div>
+                                     <div class="price">¥12.00</div>
+                                 </div>
+                            </li>
+                            <li>
+                                <div class="pic"><img src="../netease-images/gjl-b5.png" alt="">
+                                    <div class="text">20寸 纯PC“铝框”（非全铝）登机箱</div>
+                                    <div class="price">¥349.00</div>
+                                </div>
+                                <div class="pic"><img src="../netease-images/gjl-b6.png" alt="">
+                                    <div class="text">男式水柔棉圆领口袋短袖T恤</div>
+                                    <div class="price">¥89.00</div>
+                                </div>
+                                <div class="pic"><img src="../netease-images/gjl-b7.png" alt="">
+                                    <div class="text">日式和风便携拖鞋</div>
+                                    <div class="price">¥29.00</div>
+                                </div>
+                                <div class="pic"><img src="../netease-images/gjl-b8.png" alt="">
+                                    <div class="text">磨砂抽屉整理盒  套装</div>
+                                    <div class="price">¥49.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btns">
+                        <span class="leftBtn" id="carousel_leftBtn"><div class="left"></div></span>
+                        <span class="rightBtn" id="carousel_rightBtn"><div class="right"></div></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--底部板块1-->
+        <div class="service">
+            <div class="go-row">
+                <div class="item">
+                    <div class="item-one">
+                        <h4>客服电话</h4>
+                        <p class="phone">400-0368-163</p>
+                        <p>9:00-22:00</p>
+                        <a class="feedback">用户反馈</a>
+                        <a class="line-kefu">在线客服</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-two">
+                        <h4>何为严选</h4>
+                        <p class="letter">
+                            网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品
+                        </p>
+                        <div class="followsUs">
+                            <p class="titles">关注我们&nbsp:</p>
+                            <div class="ours">
+                                <div class="one">
+                                    <i></i>
+                                    <div class="QRcode">
+                                        <div class="bd">
+                                            <img src="../netease-images/gjl-yanxuan.png" alt="严选易信">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two">
+                                    <i></i>
+                                    <div class="QRcode">
+                                        <div class="bd">
+                                            <img src="../netease-images/gjl-yanxuan.png" alt="严选易信">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="three">
+                                    <i></i>
+                                    <div class="QRcode">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-three">
+                        <h4>扫码下载严选APP</h4>
+                        <div class="qrcode">
+                            <img src="../netease-images/gjl-dowload.png" alt="">
+                        </div>
+                        <div class="tip">下载领1000元新人礼包</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--底部板块2-->
+        <div id="footer">
+            <div class="footerbox">
+                <div class="up">
+                    <li class="item">
+                        <div class="inner">
+                            <i class="i1">
+                                <img src="../netease-images/gjl-盾牌.png" alt="">
+                            </i>
+                            <p class="text">30天无忧退换货</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="inner">
+                            <i class="i2">
+                                <img src="../netease-images/gjl-x汽车.png" alt="">
+                            </i>
+                            <p class="text">满88元免邮费</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="inner">
+                            <i class="i3">
+                                <img src="../netease-images/gjl-网易.png" alt="">
+                            </i>
+                            <p class="text">
+                                网易品质保证
+                            </p>
+                        </div>
+                    </li>
+                </div>
+                <div class="down">
+                    <div class="one">
+                        <li>关于我们</li>
+                        <li>帮助中心</li>
+                        <li>售后服务</li>
+                        <li>配送与验收</li>
+                        <li>商务合作</li>
+                        <li>企业采购</li>
+                        <li>开放平台</li>
+                        <li>搜索推荐</li>
+                        <li>友情链接</li>
+                    </div>
+                    <div class="two">
+                        <h5>
+                            网易公司版权所有 © 1997-2017   食品经营许可证：JY13301080111719</h5>
+                        <div class="badge">
+                            <img src="../netease-images/gjl-badge.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../netease-js/myajax.js"></script>
+<script src="../netease-js/slideshow.js"></script>
+<script type="text/javascript" src="../netease-js/onTop.js" ></script>
+<script type="text/javascript" src="../netease-js/myajax.js" ></script>
+<script>
+    var oCat = document.querySelector('#cat');
+    var oNav = document.querySelector('#middle-nav');
+    myajax.get('http://h6.duchengjiu.top/shop/api_cat.php',{},function(err,responseText){
+        var json = JSON.parse(responseText);
+        var data = json.data;
+        for (var i=0;i<data.length;i++) {
+            var obj = data[i];
+            oCat.innerHTML +=`<li>
+			 			<a href='list.html?cat_id=${obj.cat_id}'>${obj.cat_name}</a>
+			 			</li>`
+            oNav.innerHTML +=`<li>
+			 			<a href='list.html?cat_id=${obj.cat_id}'>${obj.cat_name}</a>
+			 			</li>`
+        }
+    });
+</script>
+
+<!--购物车API-->
+<script>
+    var oTable = document.querySelector('table');
+    var oSum = document.querySelector('#sum');
+    myajax.get('http://h6.duchengjiu.top/shop/api_cart.php', {token: localStorage.token}, function(err, responseText){
+        var json = JSON.parse(responseText);
+        console.log(json);
+        var data = json.data;
+        for (var i = 0; i < data.length; i++) {
+            var obj = data[i];
+            //一件商品的总价
+            obj.goods_sum = obj.goods_price * obj.goods_number;
+            oTable.innerHTML += `
+                          <tr>
+                            <td name="goods_id">${obj.goods_id}</td>
+                            <td><img src="${obj.goods_thumb}" ></td>
+                            <td>${obj.goods_name}</td>
+                            <td><input data-id="${obj.goods_id}" type="number" name="number" min="1" max="10" value="${obj.goods_number}" /></td>
+                            <td>￥${obj.goods_price}</td>
+                            <td name="sum">￥${obj.goods_sum}</td>
+                            <td><input data-id="${obj.goods_id}" type="button" name="delete" value="删除"></td>
+                          </tr>
+                          `;
+        }
+        getSum();
+    });
+
+    oTable.onchange = function(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target.name === 'number') {
+            //如果输入的内容不是数字，我们默认改成1
+            if (isNaN(parseInt(target.value))) {
+                target.value = 1;
+            }
+            console.log(target.value, target.dataset.id);
+            //得到商品的ID
+            var goods_id = target.dataset.id;
+            //得到商品的数量
+            var number = target.value;
+            //请求api修改购买的商品数量
+            myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
+                    {goods_id, number},
+                    function(err, responseText) {
+                        var json = JSON.parse(responseText);
+                        console.log(json);
+                        if (json.code === 0) {
+                            // alert('更新购物车成功');
+                            //修改总价和小计
+                            //得到当前商品的价格
+                            var goods_price = parseInt(target.parentNode.nextElementSibling.innerText);
+                            //修改单个商品的总价：数量 * 价格
+                            target.parentNode.nextElementSibling.nextElementSibling.innerText = parseInt(target.value) * goods_price;
+                            //显示总价
+                            getSum();
+                        }
+                    })
+        }
+    }
+    oTable.addEventListener('click', function(event){
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target.name === 'delete') {
+            if (!confirm('确认要删除吗')) { //当你选择的是取消则不执行任何事情
+                return;
+            }
+            //得到商品ID
+            var goods_id = target.dataset.id;
+            var number = 0;
+            myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
+                    {goods_id, number},
+                    (err, responseText) => {
+                var json = JSON.parse(responseText);
+            console.log(json);
+            if (json.code === 0) {
+                // alert('更新购物车成功');
+                //删除整个TR
+                var tr = target.parentNode.parentNode;
+                tr.parentNode.removeChild(tr);
+                //显示总价
+                getSum();
+            }
+        })
+        }
+    });
+    var oClearCart = document.querySelector('#clear-cart');
+    oClearCart.onclick = () => {
+        if (!confirm('确认要清空整个购物车吗？')) {
+            return;
+        }
+        //得到所有的商品ID
+        var oGoodsIds = document.querySelectorAll('td[name=goods_id]');
+        for (var i = 0; i < oGoodsIds.length; i++) {
+            var td = oGoodsIds[i];
+            var goods_id = parseInt(td.innerText);
+            var number = 0;
+            (function(td){
+                myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
+                        {goods_id, number},
+                        (err, responseText) => {
+                    var json = JSON.parse(responseText);
+                console.log(json);
+                if (json.code === 0) {
+                    // alert('更新购物车成功');
+                    //删除整个TR
+                    var tr = td.parentNode;
+                    tr.parentNode.removeChild(tr);
+                    //显示总价
+                    getSum();
+                }
+            })
+            })(td);
+        }
+    }
+    //显示出总价
+    function getSum() {
+        var oSums = document.querySelectorAll('td[name=sum]');
+        console.log(oSums);
+        var sum = 0;
+        for (var i = 0; i < oSums.length; i++) {
+            sum += parseInt(oSums[i].innerText.substr(1));
+        }
+        localStorage.sum = sum;
+        oSum.innerText = "￥" + sum;
+    }
+</script>
+
+<!--搜索-->
+<script>
+    var oSearch = document.querySelector("#search");
+    var oBigglass = document.querySelector('#bigglass')
+
+    oSearch.onkeyup = function(event) {
+        if (event.keyCode === 13) {
+            location.href = 'search.html?search_text='+this.value;
+        }
+    };
+    oBigglass.onclick = function(){
+        location.href = 'search.html?search_text='+oSearch.value;
+    }
+</script>
+
+<script src="../netease-js/longin-ese.js"></script>
+
+</html>

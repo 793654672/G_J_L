@@ -1,0 +1,201 @@
+/*body{*/
+	/*!*height: 5000px;*!*/
+/*}*/
+ .header-container {
+ 	width: 100%;
+ 	height: 36px;
+ 	background-color: #333;
+ }
+ 
+ .header-top {
+ 	width: 1100px;
+ 	height: 36px;
+ 	margin: 0 auto;
+ }
+ 
+ .header-top .top-life {
+ 	width: 108px;
+ 	font-size: 12px;
+ 	float: left;
+ 	line-height: 36px;
+ 	color: #ccc;
+ 	text-decoration: none;
+ }
+ 
+ .header-top .survey-box {
+ 	width: 300px;
+ 	margin-left: 37px;
+ 	float: left;
+ 	padding-top: 10px;
+ }
+ 
+ .header-top .survey-box span {
+ 	float: left;
+ }
+ 
+ .survey-box a {
+ 	width: 220px;
+ 	height: 27px;
+ 	float: left;
+ 	margin-left: 10px;
+ 	color: #B4A078;
+ 	font-size: 12px;
+ }
+ 
+ .header-top ul {
+ 	width: 490px;
+ 	float: right;
+ 	text-align: center;
+ 	padding-top: 13px;
+ }
+ 
+ .header-top li>a {
+ 	width: 60px;
+ 	float: left;
+ 	font-size: 12px;
+ 	color: #ccc;
+ 	text-decoration: none;
+ }
+ 
+ .header-top li>a:hover {
+ 	color: white;
+ }
+ 
+ .header-top li .top-special {
+ 	width: 80px;
+ 	height: 15px;
+ 	border-left: 1px solid #5C5C5C;
+ }
+ .header-middlebox{
+ 	width: 100%;
+ 	overflow: hidden;
+ }
+ .header-middle {
+ 	width: 1090px;
+ 	height: 200px;
+ 	margin: 0 auto;
+ }
+ 
+ .header-middle .middle-gif {
+ 	float: left;
+ 	margin-left: 220px;
+ }
+ 
+ .middle-search {
+ 	width: 360px;
+ 	height: 90px;
+ 	float: right;
+ 	padding-top: 60px;
+ }
+ 
+ .middle-search #search {
+ 	float: left;
+ 	width: 252px;
+ 	height: 25px;
+ 	border: none;
+ 	color: #CCCCCC;
+ 	border-bottom: 1px solid #B4A078;
+ 	font-size: 12px;
+ 	text-indent: 10px;
+ }
+ 
+ .middle-search .sea-sym {
+ 	width: 60px;
+ 	height: 30px;
+ 	background-image: url(../netease-images/pq-3.png);
+ 	background-position: 7px -337px;
+ 	float: left;
+ }
+ 
+ .middle-search .cart-sym {
+ 	width: 40px;
+ 	height: 30px;
+ 	background-image: url(../netease-images/gd-1.png);
+ 	background-position: 7px -147px;
+ 	float: left;
+ 	margin-top: 5px;
+ }
+ 
+ .header-middle .nav-nav {
+ 	width: 1090px;
+ 	height: 50px;
+ 	float: left;
+ }
+ 
+ .middle-nav>li {
+ 	float: left;
+ 	width: 83px;
+ 	height: 40px;
+ 	text-align: center;
+ 	font-size: 14px;
+ 	margin-top: 10px;
+ }
+ 
+ .middle-nav>li>a {
+ 	color: black;
+ 	font-weight: bold;
+ 	text-decoration: none;
+
+ }
+ 
+ .middle-nav>li>a:hover {
+ 	color: #B4A078;
+ 	border-bottom: 3px solid #B4A078;
+ }
+ 
+ .middle-nav .nav-first a {
+ 	color: black;
+ 	/*border-bottom: 3px solid #B4A078;*/
+ }
+ 
+ .middle-nav .zhiqu {
+ 	float: right;
+ }
+ 
+
+ .main-nav {
+ 	width: 100%;
+ 	margin-top: 150px;
+ 	position: relative;
+ 	display: none;
+ 	border-bottom: 3px solid #CCCCCC;
+ 	z-index: 999;
+ 	background: white;
+ }
+ 
+ .cat {
+ 	width: 1090px;
+ 	margin: 0 auto;
+ }
+ 
+ .cat>li {
+ 	float: left;
+ 	width: 70px;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	text-align: center;
+ 	font-size: 13px;
+ 	margin-top: 10px;
+ }
+ 
+ .cat>li>a {
+ 	color: black;
+ 	font-weight: bold;
+ 	text-decoration: none;
+ }
+ 
+ .cat>li>a:hover {
+ 	color: #B4A078;
+ 	border-bottom: 3px solid #B4A078;
+ }
+ 
+ .cat .photo {
+ 	width: 120px;
+ 	height: 50px;
+ 	background-image: url(../netease-images/pq-3.png);
+ 	background-position: 0 -65px;
+ }
+ 
+ .cat .cat-enter {
+ 	float: right;
+ }

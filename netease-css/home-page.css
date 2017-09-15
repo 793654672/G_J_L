@@ -1,0 +1,25 @@
+.header{
+    width: 1050px;
+    height: 185px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.hometab{
+    width: 1100px;
+    height: 60px;
+    border: 1px solid red;
+    margin: 0 auto;
+    position: relative;
+    color: black;
+    font-size: 14px;
+    line-height: 60px;
+}
+.hometab a{
+    margin-left: 55px;
+    text-decoration: none;
+    color: #000000;
+}
+.hometab #line{
+    margin-left: 27px;
+    border-left:1px solid #0f1215;
+}

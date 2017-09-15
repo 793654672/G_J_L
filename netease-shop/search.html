@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索商品页</title>
+		<link rel="stylesheet" type="text/css" href="../netease-css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../netease-css/reset.css"/>
+		<link rel="stylesheet" href="../netease-css/foot.css">
+		<link rel="shortcut icon" href="../netease-images/gjl-favicon.ico?r=gold" type="image/x-icon" />
+
+		<style>
+			.header-middlebox{
+		      	border-bottom: 3px solid #CCCCCC;
+		      }
+		    .hot-commodity{
+	        	width: 1400px;
+	        	/*border: 2px solid black;*/
+	        	overflow: hidden;
+	        	margin: 0 auto;
+	        }
+	        #hot-goods li{
+	        	width:280px;
+	        	height: 340px;
+	        	float: left;
+	        	position: relative;
+	        	margin:10px 30px 20px;
+	        }
+	        #hot-goods li a{
+	        	text-decoration: none;
+	        	color: black;
+	        }
+	        .name{
+	        	text-align: center;
+	        	font-family: cursive;
+	        	font-size: 18px;
+	        	line-height: 25px;
+	        	}
+	        #hot-goods img{
+	        	width: 280px;
+	        	height: 280px;
+	        }
+	        .phtimg{
+	        	width: 280px;
+	        	height: 280px;
+	        	position: absolute;
+	        	background-color:black;
+	        	opacity: 0.6;
+	        	top: 0;
+	        	display: none;
+	        }
+	        .phtimg .price{
+	        	font-size: 20px;
+	        	color:blue;
+	        	margin:10px 0 0 10px;
+	        }
+	        .phtimg .desc{
+	        	width: 200px;
+	        	height: 100px;
+	        	font-size:14px;
+	        	color:white;
+	        	float: left;
+	        	text-align: center;
+	        	line-height: 30px;
+	        	margin: 75px 0 0 55px;
+	        }
+	        #hot-goods li:hover .phtimg{
+	        	display: block;
+	        }
+	        .hot-h1{
+	        	width: 1400px;
+	        	height: 60px;
+	        	float: left;
+	        	margin-bottom: 50px;
+	        	font-size: 25px;
+	        	font-weight: bold;
+	        	text-align: center;
+	        }
+	        .hot-h1 h1{
+	        	height: 66px;
+	        	margin: 10px auto;
+	        	background-image: url(../netease-images/rxmnav.png);
+	        	background-repeat: no-repeat;
+	        	background-position: 530px -87px;
+	        	line-height: 75px;
+	        }
+		</style>
+	</head>
+	<body>
+		<!--吸顶效果-->
+		<div id="main-nav" class="main-nav">
+      		<ul class="cat" id="cat">
+		        <li class="photo"><a href="#"></a></li>
+		        <li class="cat-enter"><a href="">购物车</a></li>
+		        <li class="cat-enter"><a href="">登录</a></li>
+		        <li class="cat-enter"><a href="">注册</a></li>
+      		</ul>
+ 		 </div>
+		<!--头部-->
+		<header>
+			<div class="header-container">
+				<div class="header-top">
+					<a class="top-life" href="#">好的生活，没那么贵</a>
+					<div class="survey-box">
+						<span><img src="../netease-images/rxm-laba.gif"/></span>
+						<a href="#">【有奖调研】填问卷有机会赢30元话费</a>
+					</div>
+					<ul>
+						<li><a href="login.html">登录</a></li>
+						<li><a href="register.html">注册</a></li>
+						<li><a href="">我的订单</a></li>
+						<li><a href="#" class="top-special">严选会员</a></li>
+						<li><a href="#" class="top-special">企业采购</a></li>
+						<li><a href="#" class="top-special">客服服务</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-middlebox">
+				<div class="header-middle">
+					<div class="middle-search">
+						<input id="search" type="text" placeholder="请输入要搜索的内容" />
+						<a class="sea-sym" href="javascript:" id="bigglass"></a>
+						<a class="cart-sym" href="shop-cart.html"></a>
+					</div>
+					<img src="../netease-images/rxm-6.gif" class="middle-gif" />
+					<div class="nav-nav">
+						<ul class="middle-nav" id="middle-nav">
+							<li class="nav-first"><a href="index.html">首页</a></li>
+							<li class="zhiqu"><a href="#">甄选家</a></li>
+							<li class="zhiqu"><a href="#">专题</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--热门商品-->
+        <main>
+        	<div class="hot-commodity">
+        	    <div class='hot-h1'><h1>搜索商品</h1></div>
+        		<ul id="hot-goods"></ul>
+        	</div>
+        </main>
+
+		<!--底部-->
+		<foot>
+			<!--底部板块1-->
+			<div class="service">
+				<div class="go-row">
+					<div class="item">
+						<div class="item-one">
+							<h4>客服电话</h4>
+							<p class="phone">400-0368-163</p>
+							<p>9:00-22:00</p>
+							<a class="feedback">用户反馈</a>
+							<a class="line-kefu">在线客服</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-two">
+							<h4>何为严选</h4>
+							<p class="letter">
+								网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品
+							</p>
+							<div class="followsUs">
+								<p class="titles">关注我们&nbsp:</p>
+								<div class="ours">
+									<div class="one">
+										<i></i>
+										<div class="QRcode">
+											<div class="bd">
+												<img src="../netease-images/gjl-yanxuan.png" alt="严选易信">
+											</div>
+										</div>
+									</div>
+									<div class="two">
+										<i></i>
+										<div class="QRcode">
+											<div class="bd">
+												<img src="../netease-images/gjl-yanxuan.png" alt="严选易信">
+											</div>
+										</div>
+									</div>
+									<div class="three">
+										<i></i>
+										<div class="QRcode">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-three">
+							<h4>扫码下载严选APP</h4>
+							<div class="qrcode">
+								<img src="../netease-images/gjl-dowload.png" alt="">
+							</div>
+							<div class="tip">下载领1000元新人礼包</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部板块2-->
+			<div id="footer">
+				<div class="footerbox">
+					<div class="up">
+						<li class="item">
+							<div class="inner">
+								<i class="i1">
+									<img src="../netease-images/gjl-盾牌.png" alt="">
+								</i>
+								<p class="text">30天无忧退换货</p>
+							</div>
+						</li>
+						<li class="item">
+							<div class="inner">
+								<i class="i2">
+									<img src="../netease-images/gjl-x汽车.png" alt="">
+								</i>
+								<p class="text">满88元免邮费</p>
+							</div>
+						</li>
+						<li class="item">
+							<div class="inner">
+								<i class="i3">
+									<img src="../netease-images/gjl-网易.png" alt="">
+								</i>
+								<p class="text">
+									网易品质保证
+								</p>
+							</div>
+						</li>
+					</div>
+					<div class="down">
+						<div class="one">
+							<li>关于我们</li>
+							<li>帮助中心</li>
+							<li>售后服务</li>
+							<li>配送与验收</li>
+							<li>商务合作</li>
+							<li>企业采购</li>
+							<li>开放平台</li>
+							<li>搜索推荐</li>
+							<li>友情链接</li>
+						</div>
+						<div class="two">
+							<h5>
+								网易公司版权所有 © 1997-2017   食品经营许可证：JY13301080111719</h5>
+							<div class="badge">
+								<img src="../netease-images/gjl-badge.gif" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</foot>
+	</body>
+	<script type="text/javascript" src="../netease-js/myajax.js" ></script>
+	<script type="text/javascript" src="../netease-js/onTop.js" ></script>
+ 			<script>
+			 	var oCat = document.querySelector('#cat');
+			 	var oNav = document.querySelector('#middle-nav');
+			 	myajax.get('http://h6.duchengjiu.top/shop/api_cat.php',{},function(err,responseText){
+			 		var json = JSON.parse(responseText);
+			 		var data = json.data;
+			 		for (var i=0;i<data.length;i++) {
+			 			var obj = data[i];
+			 			oCat.innerHTML +=`<li>
+			 			<a href='index.html?cat_id=${obj.cat_id}'>${obj.cat_name}</a>
+			 			</li>`
+			 			oNav.innerHTML +=`<li>
+			 			<a href='index.html?cat_id=${obj.cat_id}'>${obj.cat_name}</a>
+			 			</li>`
+			 		}
+			 	});
+			 </script>
+
+	<!--搜索-->
+	<script>
+		var oSearch = document.querySelector("#search");
+		var oBigglass = document.querySelector('#bigglass')
+
+		oSearch.onkeyup = function(event) {
+			if (event.keyCode === 13) {
+				location.href = 'search.html?search_text='+this.value;
+			}
+		};
+
+		oBigglass.onclick = function(){
+			location.href = 'search.html?search_text='+oSearch.value;
+		}
+	</script>
+
+
+
+			<script>
+			    var search_text = getQueryString('search_text');
+			    var oGoods = document.querySelector('#hot-goods');
+			    myajax.get('http://h6.duchengjiu.top/shop/api_goods.php',
+			    {search_text: search_text},
+			    function(err,responseText){
+			      var json = JSON.parse(responseText);
+			      console.log(json);
+			      var data = json.data;
+			      //如果没数据要给出提示
+			      if (data.length === 0) {
+			        oGoods.innerHTML = "未搜索到商品, <span id='second'>5</span>秒后跳回首页";
+			        var oSecond = oGoods.querySelector('#second');
+			        var timer = setInterval(() => {
+			          var second = parseInt(oSecond.innerText);
+			          oSecond.innerText = --second;
+			        }, 1000);
+			        setTimeout(() => {
+			          clearInterval(timer);
+			          location.href = 'index.html';
+			        }, 5000);
+			        return;
+			      }
+			      for (var i = 0; i < data.length; i++) {
+			        var obj = data[i];
+			        oGoods.innerHTML +=	`<li>
+							<a href='goods.html?goods_id=${obj.goods_id}'>
+							  <div><img src='${obj.goods_thumb}'/></div>
+						      <p class='name'>${obj.goods_name}</p>
+						      <div class='phtimg'>
+						     	  <p class='price'>￥${obj.price}</p>
+							      <p class='desc'>${obj.goods_desc}</p>
+						      </div></a>
+						</li>`
+			      }
+			    });
+			</script>
+</html>
